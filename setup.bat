@@ -1,4 +1,4 @@
 cd ..
-mklink .\debug.bat .\DevEnvSys\debug.bat
-mklink .\makefile.bat .\DevEnvSys\makefile.bat
+copy /y .\DevEnvSys\debug.bat
+copy /y .\DevEnvSys\makefile.bat
 pause
