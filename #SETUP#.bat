@@ -10,8 +10,8 @@ set /p MainFileName=程序文件名:
 echo %MainFileName% > main.cfg
 )
 
-copy /y .\DevEnvSys\debug.bat .\
+copy /y .\DevEnvSys\#DEBUG#.bat .\
 
-copy /y .\DevEnvSys\makefile.bat .\
+copy /y .\DevEnvSys\#MAKEFILE#.bat .\
 
 pause
