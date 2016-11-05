@@ -1,3 +1,4 @@
+@set /p MainFileName=<main.cfg
 @goto %1
 @echo 1.Generate Spec File
 @echo 2.Pack
@@ -13,7 +14,7 @@ ping -n 2 localhost>nul
 :Generate_Spec_File
 cls
 cd dist
-pyi-makespec -F debug
+pyi-makespec -F %MainFileName%
 goto End
 
 :Pack
@@ -21,12 +22,12 @@ cls
 cd dist
 rmdir /s /q build
 rmdir /s /q dist
-pyinstaller --clean -F --log-level DEBUG debug.spec
+pyinstaller --clean -F --log-level DEBUG %MainFileName%.spec
 goto End
 
 :Release_Library
 cls
-copy /y .\dist\debug.py .\
+copy /y .\dist\%MainFileName%.py .\
 goto End
 
 :End
