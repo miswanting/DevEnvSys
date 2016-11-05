@@ -1,7 +1,5 @@
 @echo off
-cd dist
+set /p MainFileName=<main.cfg
 cls
-pydoc -w debug
-cd ..
-move .\dist\main.html .\
+pydoc -w %MainFileName%
 exit
