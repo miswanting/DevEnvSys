@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+@echo off
+>>>>>>> c1febdee31b4b3e7a34012bdfbc355e2f4f68d6b
 setlocal enabledelayedexpansion
 cd ..
 
