@@ -3,5 +3,5 @@ setlocal enabledelayedexpansion
 start .\DevEnvSys\pydoc
 set /p DebugFileName=<debug.cfg
 cls
-call !DebugFileName!
+call python !DebugFileName!
 pause
