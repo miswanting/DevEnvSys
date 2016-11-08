@@ -9,8 +9,8 @@ if /i "%c%"=="n" goto No
 cd ..
 del #DEBUG#.bat
 del #MAKEFILE#.bat
-del debug.cfg
-del main.cfg
+del _DES_DEBUG.cfg
+del _DES_MAIN.cfg
 goto End
 
 :No
