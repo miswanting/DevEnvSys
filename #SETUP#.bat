@@ -16,4 +16,6 @@ copy /y .\DevEnvSys\#DEBUG#.bat .\
 
 copy /y .\DevEnvSys\#MAKEFILE#.bat .\
 
+copy /y .\DevEnvSys\#PUSH#.bat .\
+
 pause
